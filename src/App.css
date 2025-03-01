@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+body{
+  background-image: url(../public/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  /* max-height: 100vh; */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +33,24 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.addcontainer{
+  background: #c4c3c319;
+  padding: 12px;
+  /* width: 100vw; */
+  border: none;
+  /* border-radius: 12px; */
+}
+.footer{
+  background: #c4c3c319;
+  
+}
+.text-wrap-container {
+  max-width: 70%; /* Adjust width as needed */
+  word-wrap: break-word; /* Breaks long words */
+  overflow-wrap: break-word; /* Ensures text wraps */
+  white-space: normal; /* Prevents text from staying in one line */
 }
 
 @keyframes App-logo-spin {

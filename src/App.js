@@ -36,7 +36,7 @@ initTodo=[]
 const addTodo = (Title, desc) => {
   let sno;
   if(todos.length == 0){
-    sno = 0;
+    sno = 1;
   } else {
     sno = todos[todos.length-1].sno+1;
 
@@ -58,10 +58,11 @@ const addTodo = (Title, desc) => {
 
   }, [todos])
   return (
-    <>
+    <body>
+  
     
       
-   <Header title = "ToDos " searchbar = {false}/>
+   {/* <Header title = "ToDos " searchbar = {false}/> */}
    <AddTodo addTodo={addTodo}/>
    <ToDos todos = {todos} onDelete = {onDelete}/>
    <Footer/>
@@ -69,7 +70,7 @@ const addTodo = (Title, desc) => {
 
 
 
-    </>
+    </body>
 
 
   );

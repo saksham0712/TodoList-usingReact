@@ -3,9 +3,9 @@ import React from 'react'
 export const Footer = () => {
  
   return (
-    <footer className='bg-dark text-light py-3'>
+    <footer className='footer text-light py-3'>
       <p className='text-center'>
-      copyright &copy; MyTodosList.com
+      copyright &copy; MyTodosList.com by Saksham
       </p>
         
     </footer>
