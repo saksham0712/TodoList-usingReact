@@ -6,8 +6,8 @@ export const ToDos = (props) => {
   let myStyle = {
     minHeight : "70vh",
     // screenY: "auto"
-
-}
+  }
+  console.log(props);
   return (
     <div className='container overflow-auto my-3' style={myStyle}>
       <h3 className='my-3'>ToDos List</h3>

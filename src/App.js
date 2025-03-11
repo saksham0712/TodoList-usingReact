@@ -33,7 +33,7 @@ initTodo=[]
     localStorage.setItem("todos", JSON.stringify(todos));
   }
 
-const addTodo = (Title, desc) => {
+const addTodo = (Title, desc, isPriority) => {
   let sno;
   if(todos.length == 0){
     sno = 1;
@@ -41,11 +41,12 @@ const addTodo = (Title, desc) => {
     sno = todos[todos.length-1].sno+1;
 
   }
-  console.log('i am addding the function',sno, Title, desc)
+  console.log('i am addding the function',sno, Title, desc, isPriority)
   const myTodo = {
     sno: sno,
     title: Title,
-    desc: desc
+    desc: desc,
+    isPriority: isPriority
   }
   setTodos([...todos, myTodo])
   console.log(myTodo)
